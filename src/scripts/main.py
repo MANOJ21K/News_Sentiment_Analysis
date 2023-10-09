@@ -72,7 +72,7 @@ class NewsDataUnstructured():
     def post_processing(self):
         processed_data = self.process_data()
         
-        df = processed_data[['published_date', 'Description', 'publisher']]
+        df = processed_data[['published_date', 'Description', 'publisher', 'title']]
         # After importing pandas and datetime
         df['Date'] = df['published_date'].apply(lambda x: datetime.strptime(x, "%a, %d %b %Y %H:%M:%S %Z"))
 
@@ -114,4 +114,3 @@ class NewsDataUnstructured():
         df = df.drop('Sentiment', axis=1)
         df = df[['Date', 'publisher', 'Final_Description', 'Label', 'Score']]
         return df
-
