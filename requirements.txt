@@ -11,5 +11,5 @@ streamlit
 requests
 gnews
 pandas
-re
+regex
 pyyaml
