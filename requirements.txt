@@ -1,1 +1,15 @@
 # List project dependencies here
+beautifulsoup4
+bs4
+numpy
+pandas
+requests
+bert-extractive-summarizer
+trafilatura
+transformers
+streamlit
+requests
+gnews
+pandas
+re
+pyyaml
