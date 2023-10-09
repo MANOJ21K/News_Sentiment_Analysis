@@ -13,3 +13,4 @@ gnews
 pandas
 regex
 pyyaml
+torch
